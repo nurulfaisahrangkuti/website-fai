@@ -1,0 +1,92 @@
+<html>
+<body>
+    <script>
+        window.alert("Halo,Selamat Datang Di Website Pameran Buku");
+    </script>
+    
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pameran Buku</title>
+    <style>
+        /* Styling */
+        .buku {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            float: left;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h2 align="center">Pameran Buku</h2>
+
+<div id="daftarBuku"></div>
+
+<button id="tambahBuku">Tambah Buku</button>
+
+<script>
+    // Data buku
+    let buku = [
+        { id: 1, judul: 'Laskar Pelangi', penulis: 'Andrea Hirata' },
+        { id: 2, judul: 'Bumi Manusia', penulis: 'Pramoedya Ananta Toer' },
+        { id: 3, judul: 'Negeri 5 Menara', penulis: 'Ahmad Fuadi' }
+        
+    ];
+
+    const daftarBuku = document.getElementById('daftarBuku');
+    const tambahBukuButton = document.getElementById('tambahBuku');
+
+    // Fungsi untuk menampilkan daftar buku
+    function tampilkanBuku() {
+        daftarBuku.innerHTML = ''; // Hapus semua buku sebelum menambahkan yang baru
+
+        buku.forEach(item => {
+            const bukuElement = document.createElement('div');
+            bukuElement.classList.add('buku');
+            bukuElement.innerHTML = `
+                <h3>${item.judul}</h3>
+                <p>${item.penulis}</p>
+                <button onclick="hapusBuku(${item.id})">Hapus</button>
+            `;
+            daftarBuku.appendChild(bukuElement);
+        });
+    }
+
+    // Fungsi untuk menambahkan buku
+    function tambahBuku() {
+        const judul = prompt('Masukkan judul buku:');
+        const penulis = prompt('Masukkan nama penulis:');
+
+        if (judul && penulis) {
+            const id = buku.length > 0 ? buku[buku.length - 1].id + 1 : 1;
+            buku.push({ id, judul, penulis });
+            tampilkanBuku();
+        } else {
+            alert('Judul dan penulis harus diisi!');
+        }
+    }
+
+    // Fungsi untuk menghapus buku
+    function hapusBuku(id) {
+        buku = buku.filter(item => item.id !== id);
+        tampilkanBuku();
+    }
+
+    // Tambahkan event listener untuk tombol
+    tambahBukuButton.addEventListener('click', tambahBuku);
+
+    // Tampilkan buku saat halaman dimuat
+    tampilkanBuku();
+</script>
+
+</body>
+</html>
