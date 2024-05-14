@@ -12,7 +12,7 @@
 	</script> 
          
 <script>
-        document.write("<h1> Hello! Terima Kasih Telah Mengunjungi Website Ini</h1>");
+        document.write("<h1> Hello, Terima Kasih Telah Mengunjungi Website Ini</h1>");
     </script>
 
 <style>.mainmenubtn{background-color:rgb(222, 226, 223);color:#0c0c0c;border:none;cursor:pointer;padding:20px;margin-top:20px}.mainmenubtn:hover{background-color:#fff}.dropdown{position:relative;display:inline-block}.dropdown-child{display:none;background-color:#fff;min-width:200px}.dropdown-child a{color:rgb(14, 12, 12);padding:20px;text-decoration:none;display:block}.dropdown:hover .dropdown-child{display:block}</style>
@@ -26,6 +26,8 @@
     <a href="Modul 2.2.html">Form Pemesanan Buku</a>
     <a href="Modul 2.2.html">Form Perpanjangan Peminjaman Buku</a>
     <a href="Modul 3.2.html">HTML dan CSS </a>
+    <a href="Modul 4.html">Tabel dan Form </a>
+    <a href="Modul 5.2.html">Implementasi Javascript </a>
     <a href="Modul 5.3.html">Pameran Buku </a>
 
 
