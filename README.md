@@ -41,7 +41,7 @@
    <th><i><h3 style="color:rgb(206, 202, 202)"> Berikut ini contoh website perpustakaan yang dibuat untuk memenuhi tugas pada mata kuliah Pemrograman Web Praktik </i> </h3></th>
 <footer style="text-align: center;">
     <center><table border="l">
-        <th><h3 style="color:rgb(218, 207, 207)"> Contact us </h3></th>
+        <th><h3> Contact us </h3></th>
         <tr>
         <td>
         <p><h3> Email: centrallibrary@gmail.com</h3> </p>
