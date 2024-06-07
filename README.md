@@ -40,7 +40,7 @@
     <img src="https://www.nusabali.com/article_images/35867/badung-tambah-koleksi-buku-perpustakaan-sd-senila-800-2018-08-13-105154_0.jpg" style="width:1340px;height:300px;" align="middle">
     <th><h3 style="color:rgb(245, 236, 236)"> Berikut ini contoh website perpustakaan yang dibuat untuk memenuhi tugas pada mata kuliah Pemrograman Web Praktik Program Studi S-1 Ilmu Perpustakaan, Universitas Sumatera Utara.</h3></th>
 <footer style="text-align: center;">
-    <center><th><h3 style="color:rgb(20, 20, 20)"> Contact us </h3></th>
+    <center><table=""><th><h3 style="color:rgb(20, 20, 20)"> Contact us </h3></th>
         <tr>
         <td>
         <p><i><h3> Email: centrallibrary@gmail.com </h3>
@@ -48,7 +48,7 @@
         <p><h3> <i>Alamat: Jl Aldwych, No.3 
     
        
-   <center><p><h3>>Copyright &copy; 210709047</p></h3>
+   <center><p><h3>>Copyright &copy; 210709047</h3>
 
 
 
