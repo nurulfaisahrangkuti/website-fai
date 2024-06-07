@@ -1,7 +1,7 @@
 <html>
 <head>
 <title>Website Perpustakaan</title>
-<style type="text/css">body{background-color:rgb(102, 85, 88)}</style>
+<style type="text/css">body{background-color:rgb(131, 111, 115)}</style>
 <body>
 <script>
             alert("SELAMAT DATANG DI WEBSITE PERPUSTAKAAN");
@@ -15,10 +15,10 @@
         document.write("<h1> Hello, Terima Kasih Telah Mengunjungi Website Ini</h1>");
     </script>
 
-<style>.mainmenubtn{background-color:rgb(222, 226, 223);color:#0c0c0c;border:none;cursor:pointer;padding:20px;margin-top:20px}.mainmenubtn:hover{background-color:#fff}.dropdown{position:relative;display:inline-block}.dropdown-child{display:none;background-color:#fff;min-width:200px}.dropdown-child a{color:rgb(14, 12, 12);padding:20px;text-decoration:none;display:block}.dropdown:hover .dropdown-child{display:block}</style>
+<style>.mainmenubtn{background-color:rgb(247, 243, 243);color:#0f0f0f;border:none;cursor:pointer;padding:20px;margin-top:20px}.mainmenubtn:hover{background-color:#fff}.dropdown{position:relative;display:inline-block}.dropdown-child{display:none;background-color:#fff;min-width:200px}.dropdown-child a{color:rgb(14, 12, 12);padding:20px;text-decoration:none;display:block}.dropdown:hover .dropdown-child{display:block}</style>
 <link rel="dns-prefetch" href="//www.suarasurabaya.net">
 <div class="dropdown">
-<button class="mainmenubtn"> Homepage Perpustakaan</button>
+<button class="mainmenubtn"> Homepage Menu</button>
 <div class="dropdown-child">
     <a href="Modul 1.html">Perpustakaan Perguruan Tinggi</a>
     <a href="Modul 2.1.html">Formulir Anggota Perpustakaan</a>
@@ -33,31 +33,25 @@
 
 
 </div>
-</body>
-</head>
-</html>
 
-<html>
-    <head>
-<center><h1 style="color:rgb(206, 202, 202)">WELCOME TO LIBRARY </h1>
+
+
+<center><h1 style="color:rgb(253, 249, 249)">WELCOME TO LIBRARY </h1>
     <img src="https://www.nusabali.com/article_images/35867/badung-tambah-koleksi-buku-perpustakaan-sd-senila-800-2018-08-13-105154_0.jpg" style="width:1340px;height:300px;" align="middle">
-    <th><h3 style="color:rgb(206, 202, 202)"> Berikut ini contoh website perpustakaan yang dibuat untuk memenuhi tugas pada mata kuliah Pemrograman Web Praktik</h3>
-        <th><h3 style="color:rgb(206, 202, 202)"> Program Studi S-1 Ilmu Perpustakaandan Sains Informasi, Universitas Sumatera Utara.</h3></th>
+    <th><h3 style="color:rgb(245, 236, 236)"> Berikut ini contoh website perpustakaan yang dibuat untuk memenuhi tugas pada mata kuliah Pemrograman Web Praktik Program Studi S-1 Ilmu Perpustakaandan dan Sains Informasi, Universitas Sumatera Utara.</h3></th>
 <footer style="text-align: center;">
     <center><table border="l">
-        <th><h3 style="color:rgb(218, 207, 207)"> Contact us </h3></th>
+        <th><h3 style="color:rgb(245, 239, 239)"> Contact us </h3></th>
         <tr>
         <td>
-        <p><i><h3> Email: centrallibrary@gmail.com </i></h3> </p>
+        <p><i><h3> Email: centrallibrary@gmail.com </h3>
         <p><h3> <i></i>No Telp: 081365778139</i></h3> </p>
-        <p><h3> <i>Alamat: Jl Aldwych, No.3 </i></h3> </p>
-        </td>
-        </tr>
-        </table></center>
-    <p>Copyright &copy; 210709047</p>
-</footer>
-</head>
-</html>
+        <p><h3> <i>Alamat: Jl Aldwych, No.3 </h3> </p>
+    
+        
+   <center><p>Copyright &copy; 210709047</p>
 
 
 
+
+    
