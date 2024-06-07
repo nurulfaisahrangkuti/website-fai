@@ -74,7 +74,7 @@
             <td colspan="1" style="text-align:center">&copy; Nurul Faisah Rangkuti (210709047).</td>
         </tr>
     </table>
-</body>
+
 
 
 
