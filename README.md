@@ -28,7 +28,7 @@
     <a href="Modul 2.2.html">Form Perpanjangan Peminjaman Buku</a>
     <a href="Modul 3.2.html">HTML dan CSS </a>
     <a href="Modul 4.html">Tabel dan Form </a>
-    <a href="Modul 5.2.html">Implementasi Javascript </a>
+    <a href="Modul 5.2.2.html">Implementasi Javascript </a>
     <a href="Modul 5.3.html">Pameran Buku </a>
     <a href="Modul 6.html">JQuery Perpustakaan </a>
 
