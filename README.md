@@ -41,7 +41,9 @@
     <img src="https://www.nusabali.com/article_images/35867/badung-tambah-koleksi-buku-perpustakaan-sd-senila-800-2018-08-13-105154_0.jpg" style="width:1340px;height:300px;" align="middle">
 
     
-
+ <tr>
+<td colspan="1" style="text-align:center">&copy; Nurul Faisah Rangkuti (210709047).</td>
+ </tr>
 
 
 
