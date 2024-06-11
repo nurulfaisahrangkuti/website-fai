@@ -9,6 +9,7 @@
     <tr>
         <th>Hari Belajar PHP</th>
     </tr>
+    
 
     <?php
     for ($i = 1; $i <= 1000; $i++) {
@@ -72,62 +73,58 @@
 </html>
 
 
+<br></Br>
 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+    <script>
+        function hitung() {
+            var bilangan1 = parseFloat(document.getElementById("bilangan1").value);
+            var bilangan2 = parseFloat(document.getElementById("bilangan2").value);
+            var operasi = document.getElementById("operasi").value;
+            var hasil;
 
-<h2>Operasi Bilangan</h2>
+            if (operasi === "tambah") {
+                hasil = bilangan1 + bilangan2;
+            } else if (operasi === "kurang") {
+                hasil = bilangan1 - bilangan2;
+            } else if (operasi === "kali") {
+                hasil = bilangan1 * bilangan2;
+            } else if (operasi === "bagi") {
+                hasil = bilangan1 / bilangan2;
+            }
 
-<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-    <label for="num1">Masukkan Bilangan Pertama:</label>
-    <input type="number" id="num1" name="num1" required><br><br>
-
-    <label for="num2">Masukkan Bilangan Kedua:</label>
-    <input type="number" id="num2" name="num2" required><br><br>
-
-    <label for="operator">Pilih Operasi:</label>
-    <select id="operator" name="operator">
-        <option value="add">Tambah (+)</option>
-        <option value="subtract">Kurang (-)</option>
-        <option value="multiply">Kali (*)</option>
-        <option value="divide">Bagi (/)</option>
+            document.getElementById("hasil_perhitungan").innerText = "Hasil: " + hasil;
+        }
+    </script>
+</head>
+<body>
+    <h2>Operasi Bilangan</h2>
+    <label for="bilangan1">Bilangan 1:</label>
+    <input type="number" id="bilangan1" name="bilangan1" required><br><br>
+    
+    <label for="bilangan2">Bilangan 2:</label>
+    <input type="number" id="bilangan2" name="bilangan2" required><br><br>
+    
+    <label for="operasi">Operasi:</label>
+    <select id="operasi" name="operasi" required>
+        <option value="tambah">Penjumlahan (+)</option>
+        <option value="kurang">Pengurangan (-)</option>
+        <option value="kali">Perkalian (*)</option>
+        <option value="bagi">Pembagian (/)</option>
     </select><br><br>
+    
+    <button type="button" onclick="hitung()">Hitung</button><br><br>
 
-    <input type="submit" name="submit" value="Hitung">
-</form>
-
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
-    $num1 = $_POST['num1'];
-    $num2 = $_POST['num2'];
-    $operator = $_POST['operator'];
-
-    switch ($operator) {
-        case "add":
-            $result = $num1 + $num2;
-            $operation = "Penjumlahan";
-            break;
-        case "subtract":
-            $result = $num1 - $num2;
-            $operation = "Pengurangan";
-            break;
-        case "multiply":
-            $result = $num1 * $num2;
-            $operation = "Perkalian";
-            break;
-        case "divide":
-            if ($num2 != 0) {
-                $result = $num1 / $num2;
-                $operation = "Pembagian";
-            } else 
-            
-
+   <h2> <div id="hasil_perhitungan"></div></h2>
 </body>
 </html>
 
 
-
-
-
-
+<br> </Br>
 
 <h2>Login </h2>
 
@@ -155,3 +152,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
 
 </body>
 </html>
+
+<script>
+    var listHari = document.getElementById('listHari');
+    for (var i = 1; i <= 1000; i++) {
+        var listItem = document.createElement('li');
+        listItem.textContent = "Ini adalah hari ke-" + i + " belajar php";
+        listHari.appendChild(listItem);
+    }
+</script>
