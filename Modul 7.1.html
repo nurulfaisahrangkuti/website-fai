@@ -1,0 +1,157 @@
+<P> Modul 7</P>
+
+<head>
+    <title>Belajar PHP</title>
+</head>
+<body>
+
+<table border="1">
+    <tr>
+        <th>Hari Belajar PHP</th>
+    </tr>
+
+    <?php
+    for ($i = 1; $i <= 1000; $i++) {
+        echo "<tr><td>Ini adalah hari ke-1 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-2 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-3 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-4 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-5 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-6 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-7 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-8 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-9 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-10 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-11 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-12 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-13 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-14 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-15 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-16 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-17 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-18 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-19 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-20 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-21 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-22 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-23 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-24 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-25 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-26 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-27 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-28 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-29 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-30 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-31 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-32 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-33 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-34 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-35 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-36 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-37 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-38 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-39 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-40 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-41 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-42 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-43 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-45 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-44 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-45 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-46 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-47 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-48 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-49 belajar PHP</td></tr>
+        <tr><td>Ini adalah hari ke-50 belajar PHP</td></tr>
+
+    
+    
+</table>
+
+</body>
+</html>
+
+
+
+
+<h2>Operasi Bilangan</h2>
+
+<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+    <label for="num1">Masukkan Bilangan Pertama:</label>
+    <input type="number" id="num1" name="num1" required><br><br>
+
+    <label for="num2">Masukkan Bilangan Kedua:</label>
+    <input type="number" id="num2" name="num2" required><br><br>
+
+    <label for="operator">Pilih Operasi:</label>
+    <select id="operator" name="operator">
+        <option value="add">Tambah (+)</option>
+        <option value="subtract">Kurang (-)</option>
+        <option value="multiply">Kali (*)</option>
+        <option value="divide">Bagi (/)</option>
+    </select><br><br>
+
+    <input type="submit" name="submit" value="Hitung">
+</form>
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
+    $num1 = $_POST['num1'];
+    $num2 = $_POST['num2'];
+    $operator = $_POST['operator'];
+
+    switch ($operator) {
+        case "add":
+            $result = $num1 + $num2;
+            $operation = "Penjumlahan";
+            break;
+        case "subtract":
+            $result = $num1 - $num2;
+            $operation = "Pengurangan";
+            break;
+        case "multiply":
+            $result = $num1 * $num2;
+            $operation = "Perkalian";
+            break;
+        case "divide":
+            if ($num2 != 0) {
+                $result = $num1 / $num2;
+                $operation = "Pembagian";
+            } else 
+            
+
+</body>
+</html>
+
+
+
+
+
+
+
+<h2>Login </h2>
+
+<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <input type="submit" name="login" value="Login">
+</form>
+
+<?php
+// Cek login
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+
+    // Misalnya, username dan password adalah "admin"
+    $valid_username = "admin";
+    $valid_password = "admin123";
+
+    
+
+</body>
+</html>

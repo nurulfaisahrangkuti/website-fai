@@ -1,0 +1,36 @@
+<html>
+    <P>Modul 8</P
+<head>
+    <title> Data Buku Perpustakaan</title>
+</head>
+<body>
+
+<h2>Data Buku Perpustakaan</h2>
+
+<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
+    <label for="judul">Judul Buku:</label>
+    <input type="text" id="judul" name="judul" required><br><br>
+
+    <label for="pengarang">Pengarang:</label>
+    <input type="text" id="pengarang" name="pengarang" required><br><br>
+
+    <label for="tahun">Tahun Terbit:</label>
+    <input type="number" id="tahun" name="tahun" required><br><br>
+
+    <input type="submit" name="tambah" value="Tambah Buku">
+</form>
+
+<?php
+// Koneksi ke database (ganti sesuai dengan pengaturan database Anda)
+$servername = "localhost";
+$username = "username";
+$password = "password";
+$dbname = "perpustakaan";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+// Cek koneksi
+if ($conn->
+
+</body>
+</html>
