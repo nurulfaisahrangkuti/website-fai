@@ -1,0 +1,131 @@
+
+<html>
+<head>
+    <title>Manajemen Database</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .control {
+            margin-top: 20px;
+        }
+    </style>
+    <script>
+        let database = [
+            { id: 1, name: "Wulan", age: 17, email: "wulan@gmail.com" },
+            { id: 2, name: "Reka", age: 25, email: "reka123@gmail.com" },
+            { id: 3, name: "Keysa", age: 19, email: "keyysa@gmail.com" },
+            { id: 4, name: "Ziva", age: 20, email: "zivaa@gmail.com" },
+            { id: 5, name: "Tasya", age: 22, email: "tsyaa@gmail.com" }
+        ];
+
+        function displayDatabase() {
+            let table = document.getElementById("databaseTable");
+            table.innerHTML = "";
+            database.forEach((row, index) => {
+                let tr = table.insertRow();
+                tr.insertCell(0).innerHTML = row.id;
+                tr.insertCell(1).innerHTML = row.name;
+                tr.insertCell(2).innerHTML = row.age;
+                tr.insertCell(3).innerHTML = row.email;
+                let actions = tr.insertCell(4);
+                actions.innerHTML = `<button onclick="editRow(${index})">Edit</button>
+                                     <button onclick="deleteRow(${index})">Delete</button>`;
+            });
+        }
+
+        function addRow() {
+            let name = document.getElementById("name").value;
+            let age = document.getElementById("age").value;
+            let email = document.getElementById("email").value;
+            let id = database.length ? database[database.length - 1].id + 1 : 1;
+            database.push({ id, name, age, email });
+            displayDatabase();
+        }
+
+        function editRow(index) {
+            let row = database[index];
+            document.getElementById("name").value = row.name;
+            document.getElementById("age").value = row.age;
+            document.getElementById("email").value = row.email;
+            document.getElementById("index").value = index;
+            document.getElementById("submit").value = "Update";
+        }
+
+        function updateRow(index) {
+            let name = document.getElementById("name").value;
+            let age = document.getElementById("age").value;
+            let email = document.getElementById("email").value;
+            database[index] = { ...database[index], name, age, email };
+            displayDatabase();
+            document.getElementById("submit").value = "Add";
+        }
+
+        function deleteRow(index) {
+            database.splice(index, 1);
+            displayDatabase();
+        }
+
+        function handleSubmit() {
+            let index = document.getElementById("index").value;
+            if (index) {
+                updateRow(index);
+            } else {
+                addRow();
+            }
+            document.getElementById("index").value = "";
+            document.getElementById("name").value = "";
+            document.getElementById("age").value = "";
+            document.getElementById("email").value = "";
+        }
+
+        window.onload = function() {
+            displayDatabase();
+        };
+    </script>
+</head>
+<body>
+    <h2>Database </h2>
+    <table>
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Usia</th>
+                <th>Email</th>
+                <th>Ket</th>
+            </tr>
+        </thead>
+        <tbody id="databaseTable">
+            <!-- Data akan diisi oleh JavaScript -->
+        </tbody>
+    </table>
+
+    <div class="control">
+        <h3>Ubah Data</h3>
+        <form onsubmit="event.preventDefault(); handleSubmit();">
+            <input type="hidden" id="index">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="age">Usia:</label>
+            <input type="number" id="age" name="age" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <input type="submit" id="submit" value="Add">
+        </form>
+    </div>
+</body>
+</html>
+
+
